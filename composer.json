@@ -1,0 +1,13 @@
+{
+    "name": "dark-side.pro/testmodule",
+    "description": "Test new features in PrestaShop 1.7.5 up",
+    "autoload": {
+      "psr-4": {
+        "TestModule\\Controller\\": "src/Controller/"
+      }
+    },
+    "config": {
+        "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+  }

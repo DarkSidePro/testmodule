@@ -1,0 +1,5 @@
+your_route_name:
+    path: testmodule/demo
+    methods: [GET]
+    defaults:
+      _controller: 'TestModule\Controller\DemoController::demoAction'
