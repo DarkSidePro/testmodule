@@ -3,7 +3,7 @@
     "description": "Test new features in PrestaShop 1.7.5 up",
     "autoload": {
       "psr-4": {
-        "TestModule\\Controller\\": "src/Controller/"
+        "Testmodule\\Controller\\Admin\\": "src/Controller/Admin/"
       }
     },
     "config": {
