@@ -20,4 +20,9 @@ class DemoController extends Controller
             'test' => $test,
         ]);
     }
+
+    public function formAction()
+    {
+        
+    }
 }
