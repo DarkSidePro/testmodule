@@ -2,3 +2,7 @@ your_route_name:
     path: /testmodule/demo
     methods: [GET]
     controller: DarkSide\Testmodule\Controller\Admin\DemoController::demoAction
+form_route:
+    path: /testmodule/form
+    methods: [GET]
+    controller: DarkSide\Testmodule\Controller\Admin\DemoController::formAction
