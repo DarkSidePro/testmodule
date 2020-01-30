@@ -30,6 +30,20 @@ $sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'testmodule` (
     PRIMARY KEY  (`id_testmodule`)
 ) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=utf8;';
 
+$sql[]  = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'testmodule_test` (
+    `id_testmodule_test` int(11) NOT NULL AUTO_INCREMENT,
+    `test_string` varchar(500),
+    PRIMARY KEY  (`id_testmodule_test`)
+    ) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=utf8;'; 
+
+$sql[]  = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'testmodule_test_lang` (
+    `id_testmodule_test` int(11) NOT NULL,
+    `id_lang` int(11) NOT NULL,
+    `id_shop` int(11) NOT NULL,
+    `test_lang` varchar(500),
+    PRIMARY KEY  (`id_testmodule_test`, `id_lang`, `id_shop`)
+    ) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=utf8;'; 
+
 foreach ($sql as $query) {
     if (Db::getInstance()->execute($query) == false) {
         return false;

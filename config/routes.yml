@@ -1,4 +1,4 @@
 your_route_name:
     path: /testmodule/demo
     methods: [GET]
-    controller: Testmodule\Controller\Admin\DemoController::demoAction
+    controller: DarkSide\Testmodule\Controller\Admin\DemoController::demoAction

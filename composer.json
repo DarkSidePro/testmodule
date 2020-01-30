@@ -3,7 +3,9 @@
     "description": "Test new features in PrestaShop 1.7.5 up",
     "autoload": {
       "psr-4": {
-        "Testmodule\\Controller\\Admin\\": "src/Controller/Admin/"
+        "DarkSide\\Testmodule\\Controller\\Admin\\": "src/Controller/Admin/",
+        "DarkSide\\Testmodule\\Entity\\": "src/Entity/",
+        "DarkSide\\Testmodule\\Repository\\": "src/Repository/"
       }
     },
     "config": {
